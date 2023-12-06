@@ -36,7 +36,7 @@ export default function StartupList(): ReactElement {
                   </Typography>
                   <Typography sx={{ mb: 1.5 }} color="text.secondary">
                     Founded: {new Date(item.dateFounded).getFullYear()} |
-                    {item.employees} Employees | {item.totalFunding} |{" "}
+                    {item.employees} Employees | ${item.totalFunding} Mio. |{" "}
                     {item.currentInvestmentStage}
                   </Typography>
                   <Typography variant="body2">
