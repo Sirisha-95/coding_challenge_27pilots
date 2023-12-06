@@ -9,7 +9,7 @@ export class StartupHttpService {
   }
 
   public static async getStartups(): Promise<Startup[]> {
-    const response = await axios.get<Startup[]>(`/api/startups`);
+    const response = await axios.get<Startup[]>(`/api/startups?all=true`);
     return response.data;
   }
 }
